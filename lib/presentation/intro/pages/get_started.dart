@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:spotify_clone_guys/core/configs/assets/app_images.dart';
 import 'package:spotify_clone_guys/core/configs/assets/app_vectors.dart';
@@ -10,6 +11,13 @@ class GetStartedPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        systemOverlayStyle: SystemUiOverlayStyle.light, // ← Белые иконки!
+      ),
       body: Stack(
         children: [
           Container(
